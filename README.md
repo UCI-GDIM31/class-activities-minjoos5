@@ -2,6 +2,7 @@
 ## Devlogs
 ### W1
 Hello World!
+I added changes: cat's location, movement, and speed.
 
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
