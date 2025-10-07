@@ -3,8 +3,26 @@
 ### W1
 Write your W1 activity Devlog here.
 
+
+
 ### W2
 Create future Devlog sub-headers with the three # symbols, then write your Devlogs below them.
+
+1 Why are the r, g, and b variables floats instead of ints, bools, or strings?
+
+In this project, we used 0-1 to manipulate rgb values. Float is optimized to manipulate the number between 0 to 1.
+
+int --> they cannot manipulate decimals
+bools --> they are for true/false value
+strings --> they are for characters
+
+2 Why is the _bounce variable an int instead of a float, bool, or string?
+
+it's because _bounce represents the count of how many times the ball bounced in the game. The count of ball's bounce cannot be shown in float (decimals). Also, it's not true/false value, so boolean cannot be used too. String is used to show the characters, not the integer numbers. (it can be used to show numbers, but in characters)
+
+3 The error you got after Step 4 of Part 2 told you something useful about why that line of code was broken- what was it?
+
+it missed semicolon --> easy to catch :D
 
 ## Open-Source Assets
 ### W1
