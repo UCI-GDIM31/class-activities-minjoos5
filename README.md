@@ -24,6 +24,23 @@ it's because _bounce represents the count of how many times the ball bounced in 
 
 it missed semicolon --> easy to catch :D
 
+
+### W3
+
+Table 2: rhythm game
+
+The return type should be boolean and the parameter should be float.
+The time when the player hit a beat should be stored in float variable, which can interpret time accurately.
+The return type should be boolean to show whether or not the player hit the beat correctly.
+
+If the game should show up several messages (like good, perfect, miss), then the return type should be string to show the text messages on the screen.
+
+Monobehavior coding activity:
+
+Class is like a huge category, and components are like the items under the category. For example, if the category is book, then components should include titles of books.
+
+I think the ball gets too bright due to the multiplication applied in the code.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
