@@ -8,6 +8,9 @@ public class SoccerBall : MonoBehaviour
     [SerializeField] private TMP_Text _timeText;
     [SerializeField] private ParticleSystem _goalVFX;
 
+    private int _points = 0;
+    
+
     // STEP 1 -----------------------------------------------------------------
     // The OnTriggerEnter method is a collision method called by Unity that
     //      tells our object when it's hit a collider with Is Trigger checked.
@@ -54,7 +57,10 @@ public class SoccerBall : MonoBehaviour
     private void MadeGoal()
     {
         Debug.Log("Goal");
+        _points++;
+        _pointsText.text = "points = " + _points;
         _goalVFX.Play();
+        
     }
 
 
@@ -90,6 +96,14 @@ public class SoccerBall : MonoBehaviour
     // You will need to:
     //      1. Create a new member variable to keep track of the points.
     //      2. Use your MadeGoal method to update the points and text.
+
+
+    private void goalNumber()
+    { 
+        
+        // STEP 5 -------------------------------------------------------------
+    }
+
     //
     // STEP 5 -----------------------------------------------------------------
 
