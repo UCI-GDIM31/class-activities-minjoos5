@@ -9,7 +9,10 @@ public class SoccerBall : MonoBehaviour
     [SerializeField] private ParticleSystem _goalVFX;
 
     private int _points = 0;
-    
+
+    private bool _goalSuccess;
+    private float _currentTime;
+
 
     // STEP 1 -----------------------------------------------------------------
     // The OnTriggerEnter method is a collision method called by Unity that
@@ -58,9 +61,12 @@ public class SoccerBall : MonoBehaviour
     {
         Debug.Log("Goal");
         _points++;
-        _pointsText.text = "points = " + _points;
+        _pointsText.text = "points: " + _points;
         _goalVFX.Play();
-        
+        _goalSuccess = true;
+
+        _currentTime = 0.0f;
+
     }
 
 
@@ -98,14 +104,24 @@ public class SoccerBall : MonoBehaviour
     //      2. Use your MadeGoal method to update the points and text.
 
 
-    private void goalNumber()
-    { 
-        
-        // STEP 5 -------------------------------------------------------------
-    }
+
+    // STEP 5 -------------------------------------------------------------
 
     //
     // STEP 5 -----------------------------------------------------------------
+
+
+
+    void Update()
+    {
+        _currentTime += Time.deltaTime;
+        _timeText.text = _currentTime.ToString();
+        if (_goalSuccess == true)
+        {
+            _goalSuccess = false;
+        }
+        
+    }
 
 
     // STEP 6 -----------------------------------------------------------------
