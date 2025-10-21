@@ -41,6 +41,18 @@ Class is like a huge category, and components are like the items under the categ
 
 I think the ball gets too bright due to the multiplication applied in the code.
 
+
+### W4
+
+#2
+
+Tables 1-10: lines 5, 22, and 25
+- line 5: it declares the flaot variable called _moveSpeed, which is accessible in Inspector screen.
+- line 22: it creates new float variable called translation, which calculates the vertical moving speed.
+- line 25: it translates the moving speed from "translation" variable to make the cat component move in the scene.
+
+Tables 11-19: lines 17, 28, and 32
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
