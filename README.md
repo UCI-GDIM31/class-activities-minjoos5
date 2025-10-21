@@ -47,7 +47,7 @@ I think the ball gets too bright due to the multiplication applied in the code.
 #2
 
 Tables 1-10: lines 5, 22, and 25
-- line 5: it declares the flaot variable called _moveSpeed, which is accessible in Inspector screen.
+- line 5: it declares the flaot variable called _moveSpeed, which is accessible in Inspector screen. (it also has the value of 1.0f)
 - line 22: it creates new float variable called translation, which calculates the vertical moving speed.
 - line 25: it translates the moving speed from "translation" variable to make the cat component move in the scene.
 
