@@ -11,6 +11,16 @@ public class CatW5 : MonoBehaviour
 
     private void Update()
     {
+         Vector3 movement = Vector3.zero;
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            transform.position += Vector3.forward * Time.deltaTime * _moveSpeed;
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            transform.position += Vector3.back * Time.deltaTime * _moveSpeed;
+        }
         // STEP 1 & 2 ---------------------------------------------------------
         // STEP 1
         // This CatW5 class is a Component on the Cat GameObject. It controls
