@@ -11,15 +11,15 @@ public class CatW5 : MonoBehaviour
 
     private void Update()
     {
-         Vector3 movement = Vector3.zero;
+         Vector3 translation = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position += Vector3.forward * Time.deltaTime * _moveSpeed;
+            translation = Vector3.forward;
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            transform.position += Vector3.back * Time.deltaTime * _moveSpeed;
+            translation = Vector3.back;
         }
         // STEP 1 & 2 ---------------------------------------------------------
         // STEP 1
@@ -53,9 +53,12 @@ public class CatW5 : MonoBehaviour
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
 
-        Vector3 translation = Vector3.zero;
+        if (_flipWSControls == true)
+        {
+            translation *= -1;
+        }
         
-
+        transform.Translate(translation * _moveSpeed * Time.deltaTime);
 
         // STEP 1 & 2 ---------------------------------------------------------
 
