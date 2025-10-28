@@ -53,6 +53,23 @@ Tables 1-10: lines 5, 22, and 25
 
 Tables 11-19: lines 17, 28, and 32
 
+
+### W5
+
+How can I apply vectors when the game is combined with 2D objects and 3D objects?
+
+What’s the key difference between vectors and transformations?
+Vector is the concept for directions and magnitude and transformation (attached to the game object) is the actual thing to change movements of game objects in Unity.
+
+Transform.translate()?
+Position and location of game object → move it
+
+All codes in the assignment must be in the lecture materials covered during the class
+Review is important to catch up lecture contents and codings
+
+
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
