@@ -69,6 +69,17 @@ Review is important to catch up lecture contents and codings
 
 
 
+What member variable(s) does this class need?
+- transform & navmesh is required to make the deer move toward target in the game
+
+What method(s) does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write?
+- update method is required
+
+What should the method(s) do?
+- update method will be used to control deer's movement in the game (in thsi case the deer will go toward mushroom)
+
+
+
 
 ## Open-Source Assets
 ### W1
