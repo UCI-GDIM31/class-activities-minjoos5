@@ -79,6 +79,31 @@ What should the method(s) do?
 - start method will be used to control deer's movement in the game (in thsi case the deer will go toward mushroom)
 
 
+### W6
+
+https://docs.google.com/document/d/1g257orHX8bQNaC57k1DMqCDIpAd95jDwpQPqJiA4ks8/edit?usp=sharing
+
+Unity coding
+Update()
+Built into Unity
+Called every frame
+Start()
+Called once upon loading
+MonoBehavior
+GetKey()
+Returns key code of key being held
+GetComponent
+Returns a component of the game object it’s being called on
+GetKeyDown()
+Returns key code of key pressed
+Transform
+Vector3 of said game objects location in world
+SerializeField
+Allows private variables to be tuned in the inspector
+Time.DeltaTime
+Number of frames passed
+
+
 
 
 ## Open-Source Assets
