@@ -1395,7 +1395,7 @@ MonoBehaviour:
   _animator: {fileID: 7054137235920149554}
   _rigidbody: {fileID: 7054137235920149556}
   _collider: {fileID: 7054137235920149555}
-  _moveSpeed: 20
+  _moveSpeed: 5
   _rotationSpeed: 100
   _jumpForce: 5
 --- !u!1 &7855187045782227260
