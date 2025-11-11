@@ -46,10 +46,10 @@ public class MuskratW7 : MonoBehaviour
         // You might want to look below Step 3 for an example :D
 
         float leftright = Input.GetAxis("Horizontal");
-        Vector3 nocoding = _sphereTransform.TransformDirection(Vector3.up);
+        Vector3 moveup = transform.TransformDirection(Vector3.up);
         transform.RotateAround(
-            _sphereTransform.position,
-            nocoding,
+            transform.position,
+            moveup,
             leftright * _rotationSpeed * Time.deltaTime
         );
         
@@ -94,7 +94,7 @@ public class MuskratW7 : MonoBehaviour
 
         float leftright = Input.GetAxis("Horizontal");
 
-        transform.Rotate(0, leftright * _moveSpeed * Time.deltaTime,0);
+        transform.Rotate(0, leftright * _moveSpeed * Time.deltaTime, 0);
         
 
 
@@ -110,8 +110,7 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += new Vector3(0,0,movement * _moveSpeed * Time.deltaTime);
-
+        transform.Translate(movement * Vector3.forward * _moveSpeed * Time.deltaTime);
         // STEP 2 -------------------------------------------------------------
 
 
@@ -122,7 +121,24 @@ public class MuskratW7 : MonoBehaviour
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
 
+
+        if (Mathf.Abs(_rigidbody.linearVelocity.y) != 0)
+        {
+            _animator.SetBool("flying", true);
+        }
+        else
+        {
+            _animator.SetBool("flying", false);
+        }
         
+        if (Mathf.Abs(_rigidbody.linearVelocity.x) > 0)
+        {
+            _animator.SetBool("running", true);
+        }
+        else
+        {
+            _animator.SetBool("running", false);
+        }
         // STEP 4 -------------------------------------------------------------
     }
 
