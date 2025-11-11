@@ -74,6 +74,25 @@ public class MuskratW7 : MonoBehaviour
         //      bubble.
 
 
+        if (Mathf.Abs(_rigidbody.linearVelocity.y) > 0.1f)
+        {
+            _animator.SetBool("flying", true);
+        }
+        else
+        {
+            _animator.SetBool("flying", false);
+        }
+        
+        if (Mathf.Abs(_rigidbody.linearVelocity.x) > 0)
+        {
+            _animator.SetBool("running", true);
+        }
+        else
+        {
+            _animator.SetBool("running", false);
+        }
+
+
         // STEP 5 -------------------------------------------------------------
     }
 
@@ -122,7 +141,7 @@ public class MuskratW7 : MonoBehaviour
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
 
 
-        if (Mathf.Abs(_rigidbody.linearVelocity.y) != 0)
+        if (Mathf.Abs(_rigidbody.linearVelocity.y) > 0.1f)
         {
             _animator.SetBool("flying", true);
         }
@@ -139,6 +158,7 @@ public class MuskratW7 : MonoBehaviour
         {
             _animator.SetBool("running", false);
         }
+        
         // STEP 4 -------------------------------------------------------------
     }
 
