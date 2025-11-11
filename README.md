@@ -104,7 +104,19 @@ Time.DeltaTime
 Number of frames passed
 
 
+### W7
 
+https://docs.google.com/document/d/1G_ZSCA2-UVtHll1uaPGUIZ9OZg3-oBIxvR5bJl7Vl6k/edit?tab=t.0
+
+My role: UI
+
+what was wrong with the code in Step 2?
+- It printed error message because translate method is required to fix this problem.
+
+-  transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
+
+-  this code cannot subtract or add value unless it is vector3. (so it should look like transform.position += new Vector3 (~~))
+-  In addition, the code is calculating relative movement, which means it needs translate method to fix the code
 
 ## Open-Source Assets
 ### W1
